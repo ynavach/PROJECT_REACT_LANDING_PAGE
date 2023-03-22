@@ -31,7 +31,7 @@ const dataCards = [
 			<main className="d-flex gap-4 pb-3">
 			{dataCards.map((item, i) => {
 					return( 
-						<div className="card">
+						<div className="card" key={i}>
                              <img className="card-img-top" src={item.image} alt="Card image cap"/>
                              <div className="card-body">
                                <h5 className="card-title ">{item.title}</h5>
